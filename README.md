@@ -36,36 +36,45 @@ CREATE TABLE order_detials (
     category VARCHAR(15),
     quantiy INT,
 
-🔹 Findings
+---
 
-Customer Demographics: Customers span multiple age groups, with sales across categories like Clothing & Beauty.
+## 🔹 Key Business Queries  
 
-High-Value Transactions: Several purchases exceeded 1000 in value.
+Below are some of the important business questions answered using SQL in this project:  
 
-Sales Trends: Seasonal variations show peak months for revenue.
+1. **What were the total sales and revenue generated?**  
+   ```sql
+   SELECT SUM(total_sale) AS total_sales, SUM(cogs) AS total_cogs 
+   FROM order_detials;
+---
 
-Customer Insights: Top-spending customers identified; unique customer counts per category analyzed.
+## 🔹 Findings  
+- Customers are spread across multiple age groups with sales across categories like **Clothing** and **Beauty**.  
+- Several **high-value transactions (>1000)** were identified.  
+- **Monthly sales trends** show seasonal variations and peak months.  
+- **Top 5 customers** contribute significantly to total sales.  
+- Unique customer counts vary by category, showing **diverse shopping behavior**.  
 
-🔹 Reports
+---
 
-Sales Summary: Total sales, customers, and category performance.
+## 🔹 Reports Generated  
+- **Sales Summary** → Total sales, customers, product performance.  
+- **Trend Analysis** → Monthly & shift-based sales patterns.  
+- **Customer Insights** → Top customers & demographics.  
 
-Trend Analysis: Monthly and shift-based sales performance.
+---
 
-Customer Insights: Top customers and demographic breakdown.
+## 🔹 Tools Used  
+- **SQL (MySQL)** → Queries, Joins, Aggregations, Window Functions  
+- **Excel / CSV** → Dataset storage & initial exploration  
 
-🔹 Conclusion
+---
 
-This project demonstrates practical SQL skills in:
+## 🔹 Conclusion  
+This project highlights how SQL can be used to perform data cleaning, exploratory analysis, and generate business insights from retail sales data.  
 
-Database setup & cleaning
+It serves as a strong foundation for **Data Analyst roles**, showcasing skills in querying, reporting, and deriving insights from real-world datasets.  
 
-Exploratory Data Analysis (EDA)
+---
 
-Answering business-driven queries
 
-The insights can help improve decision-making in retail by highlighting sales patterns, customer behavior, and product performance.
-    price_per_unit FLOAT,
-    cogs FLOAT,
-    total_sale FLOAT
-);
