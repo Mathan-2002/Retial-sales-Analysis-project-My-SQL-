@@ -35,6 +35,36 @@ CREATE TABLE order_detials (
     age INT,
     category VARCHAR(15),
     quantiy INT,
+
+🔹 Findings
+
+Customer Demographics: Customers span multiple age groups, with sales across categories like Clothing & Beauty.
+
+High-Value Transactions: Several purchases exceeded 1000 in value.
+
+Sales Trends: Seasonal variations show peak months for revenue.
+
+Customer Insights: Top-spending customers identified; unique customer counts per category analyzed.
+
+🔹 Reports
+
+Sales Summary: Total sales, customers, and category performance.
+
+Trend Analysis: Monthly and shift-based sales performance.
+
+Customer Insights: Top customers and demographic breakdown.
+
+🔹 Conclusion
+
+This project demonstrates practical SQL skills in:
+
+Database setup & cleaning
+
+Exploratory Data Analysis (EDA)
+
+Answering business-driven queries
+
+The insights can help improve decision-making in retail by highlighting sales patterns, customer behavior, and product performance.
     price_per_unit FLOAT,
     cogs FLOAT,
     total_sale FLOAT
